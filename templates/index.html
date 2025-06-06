@@ -13,7 +13,7 @@
     <div id="upload-message">📄 Uploading your documents...</div>
   </div>
 
-  <div class="toggle-header" onclick="toggleUpload()"> ⬆️Toggle Upload Panel</div>
+  <div class="toggle-header" id="toggle-btn" onclick="toggleUpload()">⬆️ Toggle Upload Panel</div>
 
   <div class="container" id="upload-section">
     <h1>AI Documents Summarise, Question</h1>
@@ -48,9 +48,14 @@
     const sessionId = '{{ session_id }}';
 
     function toggleUpload() {
-      const section = document.getElementById("upload-section");
-      section.classList.toggle("hidden-upload");
-    }
+    const section = document.getElementById("upload-section");
+    const button = document.getElementById("toggle-btn");
+
+    const isHidden = section.classList.toggle("hidden-upload");
+
+    // Toggle emoji based on visibility
+    button.innerHTML = isHidden ? '⬇️ Show Upload Panel' : '⬆️ Hide Upload Panel';
+  }
 
     function hideUploadOnChat() {
       const section = document.getElementById("upload-section");
