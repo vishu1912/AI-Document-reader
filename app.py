@@ -16,6 +16,9 @@ FLASK_SECRET_KEY = os.getenv("FLASK_SECRET_KEY", "dev")
 app = Flask(__name__)
 app.secret_key = FLASK_SECRET_KEY
 
+# Limit maximum upload size to 10MB
+app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024  # 10MB
+
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'pdf', 'png', 'jpg', 'jpeg', 'heic'}
 MAX_PAGES = 100
