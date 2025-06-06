@@ -1,0 +1,9 @@
+__pycache__/
+uploads/
+.env
+*.pyc
+*.log
+.DS_Storeuploads/
+chromadb_store/
+uploads/
+chromadb_store/

@@ -1,0 +1,13 @@
+Flask
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+openai
+pycryptodome
+pdf2image
+pillow
+langchain 
+langchain-google-genai 
+google-generativeai
+langgraph 
