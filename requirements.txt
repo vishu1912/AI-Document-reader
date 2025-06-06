@@ -13,3 +13,4 @@ langchain==0.3.25         # If using LangChain for RAG
 requests==2.31.0          # If calling external APIs
 Flask-Session==0.8.0      # If using session persistence
 Markdown==3.7
+langchain-google-genai==2.0.10
