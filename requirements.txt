@@ -12,3 +12,4 @@ faiss-cpu==1.10.0
 langchain==0.3.25         # If using LangChain for RAG
 requests==2.31.0          # If calling external APIs
 Flask-Session==0.8.0      # If using session persistence
+Markdown==3.7
