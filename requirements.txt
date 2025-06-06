@@ -1,16 +1,15 @@
-Flask==2.3.3
-gunicorn==23.0.0
-chromadb==1.0.12
-google-generativeai==0.8.4
-google-auth==2.38.0
-google-auth-oauthlib==1.2.1
-pdfplumber==0.11.6
-PyMuPDF==1.26.0
-pytesseract==0.3.13
-python-dotenv==1.0.1
-faiss-cpu==1.10.0
-langchain==0.3.25         # If using LangChain for RAG
-requests==2.31.0          # If calling external APIs
-Flask-Session==0.8.0      # If using session persistence
-Markdown==3.7
-langchain-google-genai==2.0.10
+Flask
+gunicorn
+markdown
+python-dotenv
+uuid
+pytesseract
+pdfplumber
+Pillow
+chromadb
+langchain
+langchain-google-genai
+langchain-chroma
+google-generativeai
+google-auth
+google-auth-oauthlib
