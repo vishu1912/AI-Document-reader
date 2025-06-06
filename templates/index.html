@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> AI Documents Summarise, Question Agent<div>Upto 60 pages of pdf allowed</div></title>
+<title>AI Document Agent — Summarize & Ask | Upto 60 PDF Pages</title>
   <link rel="stylesheet" href="/static/style.css">
   <link rel="icon" href="/static/logo.png" type="image/png">
 </head>
@@ -16,7 +16,10 @@
   <div class="toggle-header" onclick="toggleUpload()"> ⬆️Toggle Upload Panel</div>
 
   <div class="container" id="upload-section">
-    <h1>AI Documents Summarise, Question<br>60 page limit on pdfs uploaded</h1>
+    <h1>AI Documents Summarise, Question</h1>
+    <p style="font-size: 1rem; color: #666; margin-top: 0;">
+  Upload up to 60 pages of PDF, JPG, PNG, or HEIC
+</p>
     <form method="POST" enctype="multipart/form-data" onsubmit="return handleUpload(event)">
       <label for="documents">Upload your documents (PDF only)</label>
       <input type="file" name="documents" id="documents" multiple required onchange="updateFileCount()">
