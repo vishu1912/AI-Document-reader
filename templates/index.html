@@ -16,10 +16,20 @@
   <div class="toggle-header" id="toggle-btn" onclick="toggleUpload()">⬆️ Toggle Upload Panel</div>
 
   <div class="container" id="upload-section">
-    <h1>AI Documents Summarise, Question</h1>
+  <h1>
+    AI Documents Summarise, Question 
+    <span style="font-size: 0.7em; font-weight: normal;">
+      (
+      <a href="https://gocollabico.com" target="_blank" style="text-decoration: none; color: #3498db;">
+        Created by Collabico
+      </a>
+      )
+    </span>
+  </h1>
     <p style="font-size: 1rem; color: #666; margin-top: 0;">
-  Upload up to 60 pages of PDF
-</p>
+      Upload up to 60 pages of PDF
+    </p>
+  </div>
     <form method="POST" enctype="multipart/form-data" onsubmit="return handleUpload(event)">
       <label for="documents">Upload your documents (PDF only)</label>
       <input type="file" name="documents" id="documents" multiple required onchange="updateFileCount()">
