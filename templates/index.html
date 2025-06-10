@@ -32,7 +32,6 @@
 
   <!-- ✅ KEEP ONLY THIS FORM BLOCK -->
   <form method="POST" enctype="multipart/form-data" onsubmit="return handleUpload(event)">
-    <label for="documents">Upload your documents (PDF only)</label>
     <input type="file" name="documents" id="documents" multiple required onchange="updateFileCount()">
     <p id="file-count"></p>
     <button type="submit">Upload</button>
